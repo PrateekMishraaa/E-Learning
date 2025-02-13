@@ -28,7 +28,7 @@ const EditInfo = () => {
                 setUserId(decoded.id);
 
                 // Fetch user details
-                axios.get(`http://localhost:5000/api/user/${decoded.id}`)
+                axios.get(`https://e-learningbackend.onrender.com/api/user/${decoded.id}`)
                     .then(response => {
                         setFormData({
                             FirstName: response.data.FirstName || "",
